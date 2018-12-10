@@ -109,7 +109,6 @@ class AutopsiesNeuralNetwork(object):
 
         final = time()
         elapsed_time = strftime('%H:%M:%S', gmtime(final - now))
-        print("Baseline: %.2f%% (%.2f%%)" % (results.mean() * 100, results.std() * 100))
         results_mean = results.mean() * 100
         results_std = results.std() * 100
         csv_header = "time,num_logits,num_intermediate,num_layers,epochs,optimizer, "
