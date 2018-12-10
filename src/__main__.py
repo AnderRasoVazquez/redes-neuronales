@@ -81,6 +81,12 @@ def get_parser():
                         type=str,
                         help='CSV file where save results.',
                         required=False)
+    parser.add_argument('--class_attribute',
+                        type=str,
+                        help='Class to predict.',
+                        default="gs_text34",
+                        choices=["gs_text34, module, site"],
+                        required=False)
     return parser
 
 

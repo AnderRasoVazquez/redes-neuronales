@@ -19,7 +19,7 @@ class AutopsiesNeuralNetwork(object):
     def __init__(self, data_path="files/verbal_autopsies_clean.csv", num_logits=30,
                  num_intermediate=256, num_layers=1, kfold=10, epochs=20,
                  activation_intermediate="sigmoid", activation_output="softmax", optimizer="adam",
-                 loss="categorical_crossentropy", verbose=1, output_csv=None):
+                 loss="categorical_crossentropy", verbose=1, output_csv=None, class_attribute="gs_text34"):
         self.data_path = data_path
         """Path of the data to read."""
         self.num_logits = num_logits
@@ -46,6 +46,7 @@ class AutopsiesNeuralNetwork(object):
         """Show more verbose output."""
         self.output_csv = output_csv
         """CSV file where save results."""
+        self.class_attribute = class_attribute
 
     def _load_data(self):
         """Loads dataframe and returns a tuple (data, labels, headers)"""
@@ -53,7 +54,7 @@ class AutopsiesNeuralNetwork(object):
         df = df.dropna(subset=["open_response", "gs_text34"])  # delete null values from open_response and gs_text34
         vectorizer = TfidfVectorizer()
         X = vectorizer.fit_transform(df["open_response"])
-        y = df["gs_text34"]
+        y = df[self.class_attribute]
         headers = y.unique()
         self.num_outputs = len(headers)
         return X, y, headers
@@ -111,9 +112,9 @@ class AutopsiesNeuralNetwork(object):
         elapsed_time = strftime('%H:%M:%S', gmtime(final - now))
         results_mean = results.mean() * 100
         results_std = results.std() * 100
-        csv_header = "time,num_logits,num_intermediate,num_layers,epochs,optimizer, "
+        csv_header = "time,class,num_logits,num_intermediate,num_layers,epochs,optimizer, "
         csv_header += "activation_intermediate,activation_output,loss,accuracy,std"
-        row = f"{elapsed_time},{self.num_logits},{self.num_intermediate},{self.num_layers},{self.epochs},"
+        row = f"{elapsed_time},{self.class_attribute},{self.num_logits},{self.num_intermediate},{self.num_layers},{self.epochs},"
         row += f"{self.optimizer},{self.activation_intermediate},{self.activation_output},{self.loss},"
         row += f"{results_mean:.2f},{results_std:.2f}"
 
