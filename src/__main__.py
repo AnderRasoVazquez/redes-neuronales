@@ -85,7 +85,7 @@ def get_parser():
                         type=str,
                         help='Class to predict.',
                         default="gs_text34",
-                        choices=["gs_text34, module, site"],
+                        choices=["gs_text34", "module", "site"],
                         required=False)
     return parser
 
