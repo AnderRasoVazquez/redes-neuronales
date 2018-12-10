@@ -47,6 +47,7 @@ class AutopsiesNeuralNetwork(object):
         self.output_csv = output_csv
         """CSV file where save results."""
         self.class_attribute = class_attribute
+        """Class attribute to predict."""
 
     def _load_data(self):
         """Loads dataframe and returns a tuple (data, labels, headers)"""
