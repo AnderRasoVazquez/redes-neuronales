@@ -1,0 +1,12 @@
+time,class,num_logits,num_intermediate,num_layers,epochs,optimizer, activation_intermediate,activation_output,loss,accuracy,std
+00:00:16,gs_text34,30,256,1,1,adam,sigmoid,softmax,categorical_crossentropy,10.24,1.98
+00:00:16,gs_text34,30,256,1,1,adam,sigmoid,softmax,categorical_crossentropy,10.93,3.02
+00:00:17,gs_text34,30,256,1,1,adam,sigmoid,softmax,categorical_crossentropy,11.83,1.94
+00:04:50,gs_text34,30,512,2,20,adam,sigmoid,softmax,categorical_crossentropy,25.98,1.12
+00:05:01,gs_text34,50,512,2,20,adam,sigmoid,softmax,categorical_crossentropy,30.28,1.06
+00:05:28,gs_text34,100,512,2,20,adam,sigmoid,softmax,categorical_crossentropy,33.56,1.29
+00:05:56,gs_text34,150,512,2,20,adam,sigmoid,softmax,categorical_crossentropy,35.31,1.10
+00:06:19,gs_text34,200,512,2,20,adam,sigmoid,softmax,categorical_crossentropy,36.47,2.64
+00:08:21,gs_text34,250,512,2,20,adam,sigmoid,softmax,categorical_crossentropy,36.82,1.20
+00:06:27,module,300,512,2,20,adam,sigmoid,softmax,categorical_crossentropy,87.06,1.74
+00:06:14,site,300,512,2,20,adam,sigmoid,softmax,categorical_crossentropy,96.24,0.50

@@ -1,0 +1,1 @@
+time,num_logits,num_intermediate,num_layers,epochs,optimizer, activation_intermediate,activation_output,loss,accuracy,std00:00:59,30,256,1,20,adam,sigmoid,softmax,categorical_crossentropy,27.26,1.48
