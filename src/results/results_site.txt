@@ -1,0 +1,12 @@
+
+#### AVERAGE REPORT FROM 10 FOLD CROSS VALIDATION  ####
+              precision  recall  f1-score
+AP                 0.00    0.00      0.00
+Bohol              0.00    0.00      0.00
+Dar                0.01    0.01      0.01
+Mexico             0.01    0.02      0.02
+Pemba              0.01    0.05      0.02
+UP                 0.00    0.00      0.00
+micro avg          0.01    0.01      0.01
+macro avg          0.01    0.02      0.01
+weighted avg       0.01    0.01      0.01

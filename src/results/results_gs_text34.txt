@@ -1,0 +1,38 @@
+
+#### AVERAGE REPORT FROM 10 FOLD CROSS VALIDATION  ####
+                                      precision  recall  f1-score
+Acute Myocardial Infarction                0.00    0.00      0.00
+Asthma                                     0.00    0.00      0.00
+Bite of Venomous Animal                    0.00    0.00      0.00
+COPD                                       0.00    0.00      0.00
+Cirrhosis                                  0.02    0.05      0.03
+Colorectal Cancer                          0.01    0.05      0.02
+Diabetes                                   0.00    0.00      0.00
+Encephalitis                               0.00    0.05      0.01
+Epilepsy                                   0.00    0.03      0.01
+Falls                                      0.06    0.04      0.05
+Fires                                      0.00    0.00      0.00
+Hemorrhagic fever                          0.00    0.00      0.00
+Lung Cancer                                0.02    0.07      0.03
+Measles                                    0.00    0.00      0.00
+Meningitis                                 0.09    0.06      0.07
+Meningitis/Sepsis                          0.00    0.00      0.00
+Other Cancers                              0.00    0.02      0.01
+Other Cardiovascular Diseases              0.03    0.02      0.02
+Other Defined Causes of Child Deaths       0.04    0.46      0.07
+Other Digestive Diseases                   0.00    0.05      0.00
+Other Non-communicable Diseases            0.04    0.03      0.03
+Poisonings                                 0.00    0.00      0.00
+Stillbirth                                 0.01    0.02      0.01
+Suicide                                    0.19    0.26      0.22
+Cervical Cancer                            0.02    0.03      0.03
+Esophageal Cancer                          0.00    0.00      0.00
+Preterm Delivery                           0.00    0.00      0.00
+Renal Failure                              0.00    0.00      0.00
+Violent Death                              0.00    0.00      0.00
+AIDS                                       0.00    0.00      0.00
+Diarrhea/Dysentery                         0.00    0.00      0.00
+Prostate Cancer                            0.00    0.00      0.00
+micro avg                                  0.02    0.03      0.02
+macro avg                                  0.02    0.04      0.02
+weighted avg                               0.02    0.03      0.02

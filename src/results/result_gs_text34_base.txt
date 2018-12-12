@@ -1,0 +1,15 @@
+
+#### AVERAGE REPORT FROM 10 FOLD CROSS VALIDATION  ####
+                                      precision  recall  f1-score
+Encephalitis                               0.00    0.01      0.00
+Epilepsy                                   0.01    0.11      0.02
+Measles                                    0.00    0.00      0.00
+Other Defined Causes of Child Deaths       0.02    0.71      0.03
+Other Digestive Diseases                   0.00    0.08      0.01
+Stillbirth                                 0.00    0.00      0.00
+Other Cancers                              0.00    0.00      0.00
+Asthma                                     0.00    0.00      0.00
+Cirrhosis                                  0.00    0.00      0.00
+micro avg                                  0.01    0.12      0.02
+macro avg                                  0.00    0.14      0.01
+weighted avg                               0.00    0.12      0.01

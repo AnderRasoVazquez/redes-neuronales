@@ -1,0 +1,9 @@
+
+#### AVERAGE REPORT FROM 10 FOLD CROSS VALIDATION  ####
+              precision  recall  f1-score
+Adult              0.88    0.95      0.91
+Child              0.80    0.65      0.72
+Neonate            0.86    0.76      0.80
+micro avg          0.86    0.86      0.86
+macro avg          0.84    0.79      0.81
+weighted avg       0.87    0.86      0.86

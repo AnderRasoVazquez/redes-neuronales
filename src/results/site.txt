@@ -1,0 +1,39 @@
+
+#### AVERAGE REPORT FROM 10 FOLD CROSS VALIDATION  ####
+                                      precision  recall  f1-score
+Acute Myocardial Infarction                0.00    0.00      0.00
+Bite of Venomous Animal                    0.01    0.01      0.01
+COPD                                       0.00    0.00      0.00
+Cervical Cancer                            0.02    0.04      0.03
+Cirrhosis                                  0.03    0.04      0.03
+Colorectal Cancer                          0.00    0.02      0.01
+Diabetes                                   0.00    0.00      0.00
+Encephalitis                               0.00    0.00      0.00
+Epilepsy                                   0.01    0.03      0.01
+Esophageal Cancer                          0.00    0.00      0.00
+Falls                                      0.05    0.04      0.04
+Fires                                      0.00    0.00      0.00
+Hemorrhagic fever                          0.00    0.00      0.00
+Lung Cancer                                0.01    0.02      0.01
+Measles                                    0.00    0.00      0.00
+Meningitis                                 0.06    0.07      0.06
+Meningitis/Sepsis                          0.00    0.00      0.00
+Other Cancers                              0.00    0.00      0.00
+Other Cardiovascular Diseases              0.02    0.02      0.02
+Other Defined Causes of Child Deaths       0.03    0.48      0.06
+Other Digestive Diseases                   0.00    0.00      0.00
+Other Non-communicable Diseases            0.02    0.02      0.02
+Poisonings                                 0.00    0.00      0.00
+Preterm Delivery                           0.00    0.00      0.00
+Renal Failure                              0.04    0.01      0.01
+Stillbirth                                 0.01    0.01      0.01
+Suicide                                    0.14    0.26      0.18
+Asthma                                     0.00    0.00      0.00
+Diarrhea/Dysentery                         0.00    0.00      0.00
+Drowning                                   0.00    0.00      0.00
+Prostate Cancer                            0.00    0.00      0.00
+Congenital malformation                    0.00    0.00      0.00
+Violent Death                              0.00    0.00      0.00
+micro avg                                  0.02    0.03      0.02
+macro avg                                  0.02    0.04      0.02
+weighted avg                               0.02    0.03      0.02

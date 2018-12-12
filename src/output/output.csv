@@ -10,3 +10,17 @@ time,class,num_logits,num_intermediate,num_layers,epochs,optimizer, activation_i
 00:08:21,gs_text34,250,512,2,20,adam,sigmoid,softmax,categorical_crossentropy,36.82,1.20
 00:06:27,module,300,512,2,20,adam,sigmoid,softmax,categorical_crossentropy,87.06,1.74
 00:06:14,site,300,512,2,20,adam,sigmoid,softmax,categorical_crossentropy,96.24,0.50
+00:07:28,gs_text34,400,512,2,20,adam,sigmoid,softmax,categorical_crossentropy,38.14,1.74
+00:11:12,gs_text34,500,512,2,20,adam,sigmoid,softmax,categorical_crossentropy,36.94,1.77
+00:09:54,gs_text34,250,512,3,20,adam,sigmoid,softmax,categorical_crossentropy,29.48,1.71
+00:01:37,gs_text34,250,128,3,20,adam,sigmoid,softmax,categorical_crossentropy,31.49,1.44
+00:04:47,gs_text34,200,512,3,20,sgd,sigmoid,softmax,categorical_crossentropy,9.62,0.97
+00:00:54,gs_text34,3,96,2,20,adam,sigmoid,softmax,categorical_crossentropy,13.86,0.91
+00:00:47,gs_text34,3,96,2,20,sgd,sigmoid,softmax,categorical_crossentropy,9.62,0.95
+00:00:44,module,3,96,2,20,sgd,sigmoid,softmax,categorical_crossentropy,65.31,1.47
+00:01:16,module,200,128,2,20,sgd,sigmoid,softmax,categorical_crossentropy,65.31,1.76
+00:01:13,module,200,128,2,20,adam,sigmoid,softmax,categorical_crossentropy,86.87,0.88
+00:02:01,module,200,256,2,20,adam,sigmoid,softmax,categorical_crossentropy,86.80,0.54
+00:01:05,module,200,56,3,20,adam,sigmoid,softmax,categorical_crossentropy,86.91,0.90
+00:00:54,module,10,56,3,20,adam,sigmoid,softmax,categorical_crossentropy,81.98,1.18
+00:00:55,site,10,56,3,20,adam,sigmoid,softmax,categorical_crossentropy,87.08,1.42

@@ -2,6 +2,7 @@
 
 from argparse import ArgumentParser
 from neural_networks import AutopsiesNeuralNetwork
+import matplotlib.pyplot as plt
 
 
 def get_parser():
@@ -46,13 +47,13 @@ def get_parser():
                         type=str,
                         help='Activation function for hidden layers.',
                         default="sigmoid",
-                        choices=["sigmoid"],
+                        choices=["sigmoid", "relu", "softmax"],
                         required=False)
 
     parser.add_argument('--activation_output',
                         type=str,
                         help='Activation function for hidden layers.',
-                        choices=["softmax"],
+                        choices=["sigmoid", "relu", "softmax"],
                         default='softmax',
                         required=False)
 
@@ -66,8 +67,8 @@ def get_parser():
     parser.add_argument('--loss',
                         type=str,
                         help='Loss function.',
-                        choices=["categorical_crossentropy"],
-                        default="categorical_crossentropy",
+                        choices=["categorical_crossentropy", "binary_crossentropy"],
+                        default="binary_crossentropy",
                         required=False)
 
     parser.add_argument('--verbose',
@@ -77,9 +78,10 @@ def get_parser():
                         default=1,
                         required=False)
 
-    parser.add_argument('--output_csv',
+    parser.add_argument('--output_file',
                         type=str,
-                        help='CSV file where save results.',
+                        help='File where save results.',
+                        default="output.txt",
                         required=False)
     parser.add_argument('--class_attribute',
                         type=str,
@@ -87,13 +89,38 @@ def get_parser():
                         default="gs_text34",
                         choices=["gs_text34", "module", "site"],
                         required=False)
+    parser.add_argument('--plot_path',
+                        type=str,
+                        help='Path to save plot.',
+                        required=False)
     return parser
+
+
+def create_plot(name, history, key, title, path=None):
+    plt.figure(figsize=(16, 10))
+
+    val = plt.plot(history.epoch, history.history['val_' + key],
+                   '--', label=name.title() + ' Val')
+    plt.plot(history.epoch, history.history[key], color=val[0].get_color(),
+             label=name.title() + ' Train')
+
+    plt.xlabel('Epochs')
+    plt.ylabel(key.replace('_', ' ').title())
+    plt.legend()
+    plt.title(title)
+
+    plt.xlim([0, max(history.epoch)])
+    if path:
+        plt.savefig(path)
+    else:
+        plt.show()
 
 
 def main():
     """Starting point of the application."""
     args = get_parser().parse_args()
-    AutopsiesNeuralNetwork(**args.__dict__).run()
+    history = AutopsiesNeuralNetwork(**args.__dict__).run()
+    create_plot("Classifier", history, args.loss, title=args.class_attribute, path=args.plot_path)
 
 
 if __name__ == "__main__":
